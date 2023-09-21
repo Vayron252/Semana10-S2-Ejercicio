@@ -21,9 +21,9 @@
                 <p>Dado el siguiente arreglo:</p>
                 <p><b>const muebles = ['mesa','silla','camas','colchones','escritorios']</b></p>
                 <p>Verificar si existe el mueble deseado:</p>
-                <div class="d-flex gap-3">
-                    <input type="text" placeholder="Ingrese su mueble" class="form-control w-50" id="txtMueble">
-                    <button class="btn btn-success form-control w-25" id="btnBuscarMueble">Buscar</button>
+                <div class="row g-2">
+                    <div class="col-12 col-lg-10"><input type="text" placeholder="Ingrese su mueble" class="form-control" id="txtMueble"></div>
+                    <div class="col-12 col-lg-2"><button class="btn btn-success form-control" id="btnBuscarMueble">Buscar</button></div>
                 </div>
                 <div class="alert alert-primary mt-2" role="alert" id="alertaMueble"></div>
             </div>
@@ -43,9 +43,9 @@
                     {codigo: 4, nombre: 'Axe', nivelpoder: 96},
                     {codigo: 5, nombre: 'Dazzle', nivelpoder: 20}];</b></p>
                 <p>Verificar que existan heroes menores que el nivel de poder ingresado:</p>
-                <div class="d-flex gap-3">
-                    <input type="number" placeholder="Ingrese el nivel de poder" class="form-control w-50" id="txtNivelPoder">
-                    <button class="btn btn-success form-control w-25" id="btnBuscarNivelPoder">Buscar</button>
+                <div class="row g-2">
+                    <div class="col-12 col-lg-10"><input type="number" placeholder="Ingrese el nivel de poder" class="form-control" id="txtNivelPoder"></div>
+                    <div class="col-12 col-lg-2"><button class="btn btn-success form-control" id="btnBuscarNivelPoder">Buscar</button></div>
                 </div>
                 <div class="alert alert-primary mt-2" role="alert" id="alertNivelPoder"></div>
             </div>
@@ -65,7 +65,7 @@
                     {codigo: 4, nombre: 'Axe', nivelpoder: 96},
                     {codigo: 5, nombre: 'Dazzle', nivelpoder: 20}];</b></p>
                 <p>Devolver el valor del objeto:</p>
-                <div class="row gap-2 m-0" id="listado-heroes"></div>
+                <div class="row m-0 gap-2" id="listado-heroes"></div>
                 <div class="alert alert-primary mt-2 mb-0" role="alert" id="alertPosicion"></div>
             </div>
         </div>
@@ -103,10 +103,10 @@
                     {codigo: 4, nombre: 'Axe', nivelpoder: 96},
                     {codigo: 5, nombre: 'Dazzle', nivelpoder: 20}];</b></p>
                 <p>Devolver los objetos cuyos nivel de poder sean mayor a:</p>
-                <div class="d-flex gap-1">
-                    <input type="number" placeholder="Ingrese el nivel de poder" class="form-control w-50" id="txtNivelPoder2">
-                    <button class="btn btn-success form-control w-25" id="btnBuscarNivelPoder2">Buscar</button>
-                    <button class="btn btn-secondary form-control w-25" id="btnLimpiar">Limpiar</button>
+                <div class="row g-2">
+                    <div class="col-12 col-lg-8"><input type="number" placeholder="Ingrese el nivel de poder" class="form-control" id="txtNivelPoder2"></div>
+                    <div class="col-12 col-lg-2"><button class="btn btn-success form-control" id="btnBuscarNivelPoder2">Buscar</button></div>
+                    <div class="col-12 col-lg-2"><button class="btn btn-secondary form-control" id="btnLimpiar">Limpiar</button></div>
                 </div>
                 <p class="mt-2">Heroes encontrados:</p>
                 <div id="cont-list"><div class="row gap-2 m-0 p-2 bg-info" id="contenedor-heroes-filtrados"></div></div>

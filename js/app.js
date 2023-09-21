@@ -48,7 +48,7 @@ heroes.forEach(heroe => {
     divtitulo.textContent = heroe.nombre;
     divtitulo.classList.add('card-title');
     let card = document.createElement('div');
-    card.classList.add('col','card','p-2');
+    card.classList.add('col-12', 'col-lg','card','p-2');
     card.append(divtitulo, divfooter);
     listadoheroes.appendChild(card);
 });
@@ -77,7 +77,7 @@ heroes.forEach(heroe => {
     divtitulo.textContent = heroe.nombre;
     divtitulo.classList.add('card-title');
     let card = document.createElement('div');
-    card.classList.add('col','card','p-2');
+    card.classList.add('col-12', 'col-lg','card','p-2');
     card.append(divtitulo, divfooter);
     listadoheroes2.appendChild(card);
 });
@@ -119,7 +119,7 @@ btnBuscarNivelPoder2.addEventListener('click', () => {
             divtitle.textContent = heroe.nombre;
             divtitle.classList.add('card-title', 'border-bottom', 'p-2');
             let card = document.createElement('div');
-            card.classList.add('col', 'card');
+            card.classList.add('col-12', 'col-lg', 'card');
             card.append(divtitle, divbody);
             contenedorfiltros.appendChild(card);
         });
